@@ -8,6 +8,10 @@ import PodberezovikImg from './podberezovik.jpg';
 import PodosinovikImg from './podosinovik.jpg';
 import SiroejkaImg from './siroejka.jpg';
 import MaslonokImg from './maslenok.jpg';
+import LisichkaImg from './lisichka.jpg';
+import OpenokImg from './openok.jpg';
+import SinykImg from './sinyk.jpg';
+import RyadovkaImg from './ryadovka.jpg';
 
 export const Card = ({ className, ...props }: CardProps): JSX.Element => {
 	const data = [
@@ -40,6 +44,30 @@ export const Card = ({ className, ...props }: CardProps): JSX.Element => {
 			title: 'Маслёнок',
 			text: 'Маслята - одни из самых популярных съедобных грибов. Свое название они получили благодаря блестящей липкой пленке, покрывающей шляпку.',
 			latin: 'Boletaceae',
+		},
+		{
+			img: LisichkaImg,
+			title: 'Лисичка',
+			text: 'Лисичка — гриб с самой яркой и запоминающейся внешностью. Шляпка и ножка составляют одно целое, цвет от светло-желтого до желто-оранжевого цвета.',
+			latin: 'Cantharēllus cibārius',
+		},
+		{
+			img: OpenokImg,
+			title: 'Опята',
+			text: 'Опёнок представляет из себя небольшой гриб бежевого цвета, но шляпка может быть разных цветов, зависит это от субстрата, на котором растёт гриб. Варьируется цвет от медово-жёлтого и доходит до тёмно-серого.',
+			latin: 'Armillaria mellea',
+		},
+		{
+			img: SinykImg,
+			title: 'Синяк',
+			text: 'Съедобные, но редкие грибы – синяки, которые раньше высоко ценились нашими предками, растут во всех странах СНГ. Гриб синяк очень легко узнать на лесных просторах. Синяк имеет характерные отличия, среди которых способность приобретать синий оттенок , считается самым выразительным.',
+			latin: 'Gyróporus cyanéscens',
+		},
+		{
+			img: RyadovkaImg,
+			title: 'Рядовка',
+			text: 'Грибы рядовки – это собирательное название целого отряда грибов, включающего в себя как съедобные, так и ядовитые виды. В основном все они съедобные: и серая рядовка, и тополевая, и исполин, и мацутаке, и массивная, и желтая.',
+			latin: 'Tricholoma',
 		},
 	];
 

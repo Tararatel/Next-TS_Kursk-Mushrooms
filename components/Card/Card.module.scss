@@ -1,8 +1,9 @@
 .card {
 	.card__img {
-	margin: 25px 0 20px 0;
-	width: 387px;
-	height: 284px;
+		margin: 25px 0 20px 0;
+		min-width: 347px;
+		min-height: 244px;
+		padding: 5px;
 	}
 	.card__from {
 		margin-bottom: 18px;
@@ -16,11 +17,3 @@
 		padding: 5px;
 	}
 }
-
-
-
-
-
-
-
-

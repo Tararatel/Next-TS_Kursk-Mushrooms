@@ -7,7 +7,7 @@ const Home: NextPage = () => {
 			<Header />
 			<Banner />
 			<List />
-			{/* <MapComp /> */}
+			<MapComp />
 		</>
 	);
 };

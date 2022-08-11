@@ -1,5 +1,5 @@
 import { PProps } from './P.props';
-import styles from './P.module.css';
+import styles from './P.module.scss';
 import cn from 'classnames';
 
 export const P = ({ size = 'medium', className, ...props }: PProps): JSX.Element => {
