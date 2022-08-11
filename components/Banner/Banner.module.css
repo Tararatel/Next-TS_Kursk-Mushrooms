@@ -1,0 +1,30 @@
+.banner {
+	max-width: 1200px;
+	margin: 0 auto 36px auto;
+}
+
+.banner__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+}
+
+.banner__wrapper__image {
+	width: 721px;
+	max-height: auto;
+}
+
+.banner__wrapper__info {
+	max-width: 429px;
+}
+
+.banner__wrapper__info__title {
+	margin-bottom: 27px;
+}
+
+.banner__wrapper__info__text {
+	margin-bottom: 27px;
+}
+
+.banner__wrapper__info__textTr {
+}

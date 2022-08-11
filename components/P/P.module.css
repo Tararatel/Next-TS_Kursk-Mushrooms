@@ -1,0 +1,38 @@
+.p {
+	margin: 0;
+}
+
+.verySmall {
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+	font-weight: bold;
+}
+
+.small {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.medium {
+	font-size: 16px;
+	line-height: 24px;
+	color: #666666;
+}
+
+.big {
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.large {
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #000000;
+}
