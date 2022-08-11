@@ -21,7 +21,7 @@ export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 
 	return (
 		<section className={styles.map}>
-			<YMaps query={{ apikey: process.env.NEXT_PUBLIC_API_KEY }}>
+			<YMaps>
 				<Map width={'100%'} height={'100%'} defaultState={mapData}>
 					{coordinates.map((coordinate) => (
 						<Placemark key={coordinate[0]} geometry={coordinate} />

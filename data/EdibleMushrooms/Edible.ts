@@ -13,6 +13,7 @@ import ZontikImg from './zontik.jpg';
 import RizikImg from './rizik.jpg';
 import GruzdImg from './gruzd.jpg';
 import VolnushkaImg from './volnushka.jpg';
+import MohovikImg from './mohovik.jpg';
 
 interface Data {
 	img: StaticImageData;
@@ -105,5 +106,11 @@ export const Edible: Data[] = [
 		title: 'Груздь настоящий',
 		text: 'Грузди — это вкусные деликатесные грибы, которые растут в лиственных, смешанных, а также сосновых лесах, подразделяются на съедобные и несъедобные сорта.',
 		latin: 'Lactárius résimus',
+	},
+	{
+		img: MohovikImg,
+		title: 'Моховик',
+		text: 'Моховик – трубчатый гриб из семейства Болетовых с бархатистой, сухой или немного клейкой шляпкой, на морщинистой цилиндрической ножке.',
+		latin: 'Xerócomus',
 	},
 ];
