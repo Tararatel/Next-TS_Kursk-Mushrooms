@@ -1,5 +1,5 @@
 import { BannerProps } from './Banner.props';
-import styles from './Banner.module.css';
+import styles from './Banner.module.scss';
 import { P } from '../P/P';
 import Image from 'next/image';
 import BannerImg from './whitemushroom.jpg';

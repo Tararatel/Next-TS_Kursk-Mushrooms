@@ -1,5 +1,5 @@
 import { MapProps } from './Map.props';
-import styles from './Map.module.css';
+import styles from './Map.module.scss';
 import cn from 'classnames';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 

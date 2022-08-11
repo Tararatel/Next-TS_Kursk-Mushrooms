@@ -1,5 +1,5 @@
 import { HeaderProps } from './Header.props';
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 import { ForwardedRef, forwardRef } from 'react';
 import { P } from '../P/P';
 import { Divider } from '../Divider/Divider';

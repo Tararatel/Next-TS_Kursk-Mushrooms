@@ -1,5 +1,5 @@
 import { ListProps } from './List.props';
-import styles from './List.module.css';
+import styles from './List.module.scss';
 import cn from 'classnames';
 import { Card } from '../Card/Card';
 

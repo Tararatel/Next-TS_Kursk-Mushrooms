@@ -1,5 +1,5 @@
 import { LogoProps } from './Logo.props';
-import styles from './Logo.module.css';
+import styles from './Logo.module.scss';
 import LogoImg from './logo.png';
 import Image from 'next/image';
 
