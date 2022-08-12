@@ -12,12 +12,17 @@ export const List = ({ className, ...props }: ListProps): JSX.Element => {
 			</P>
 			<section className={styles.list}>
 				<div className={styles.list__wrapper}>
-					<Card />
+					<Card data="Edible" />
 				</div>
 			</section>
 			<P size="large" align="center">
-				Несъедобные грибы
+				Несъедобные и ядовитые грибы
 			</P>
+			<section className={styles.list}>
+				<div className={styles.list__wrapper}>
+					<Card data="Inedible" />
+				</div>
+			</section>
 		</>
 	);
 };
