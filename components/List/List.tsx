@@ -7,7 +7,7 @@ import { P } from '../P/P';
 export const List = ({ className, ...props }: ListProps): JSX.Element => {
 	return (
 		<>
-			<P size="large" align="center">
+			<P id="edible" size="large" align="center">
 				Съедобные грибы
 			</P>
 			<section className={styles.list}>
@@ -15,7 +15,7 @@ export const List = ({ className, ...props }: ListProps): JSX.Element => {
 					<Card data="Edible" />
 				</div>
 			</section>
-			<P size="large" align="center">
+			<P id="inedible" size="large" align="center">
 				Несъедобные и ядовитые грибы
 			</P>
 			<section className={styles.list}>

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { P } from '../P/P';
 import { Edible } from '../../data/EdibleMushrooms/Edible';
 import { InEdible } from '../../data/InedibleMushrooms/Edible';
+import Link from 'next/link';
 
 export const Card = ({ className, data, ...props }: CardProps): JSX.Element => {
 	{
@@ -20,6 +21,13 @@ export const Card = ({ className, data, ...props }: CardProps): JSX.Element => {
 							</P>
 							<P className={styles.card__title} size="big">{`${card.title}`}</P>
 							<P className={styles.card__text} size="small">{`${card.text}`}</P>
+							<Link href={`/mushrooms/edible/${card.pathName}`}>
+								<a>
+									<P className={styles.card__link} size="verySmall" align="left">
+										Подробнее
+									</P>
+								</a>
+							</Link>
 						</div>
 					))}
 				</>

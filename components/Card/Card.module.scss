@@ -1,6 +1,7 @@
 .card {
+	margin-top: 15px;
 	.card__img {
-		margin: 25px 0 20px 0;
+		margin: 5px 0 20px 0;
 		min-width: 347px;
 		min-height: 244px;
 		padding: 5px;
@@ -15,5 +16,16 @@
 	}
 	.card__text {
 		padding: 5px;
+	}
+	.card__link {
+		cursor: pointer;
+		margin-top: 10px;
+		padding: 5px;
+
+		&:hover {
+			transition: 0.5s all ease;
+			color: gray;
+			font-size: 11px;
+		}
 	}
 }

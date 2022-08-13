@@ -11,25 +11,34 @@ export const Header = ({ className, ...props }: HeaderProps, ref: ForwardedRef<H
 		<>
 			<header className={styles.header} {...props}>
 				<div className={styles.header__wrapper}>
-					<div className={styles.header__wrapper__logo}>
-						<Logo />
-						<P size="medium">Kursk Mushrooms</P>
-					</div>
+					<Link href={'/'}>
+						<div className={styles.header__wrapper__logo}>
+							<Logo />
+							<P size="medium">Kursk Mushrooms</P>
+						</div>
+					</Link>
+
 					<nav className={styles.header__wrapper__navigation}>
 						<ul>
 							<li>
 								<P size="small">
-									<Link href="#">link 1</Link>
+									<Link href="/">
+										<a>Главная</a>
+									</Link>
 								</P>
 							</li>
 							<li>
 								<P size="small">
-									<Link href="#">link 2</Link>
+									<Link href="#edible">
+										<a>Съедобные грибы</a>
+									</Link>
 								</P>
 							</li>
 							<li>
 								<P size="small">
-									<Link href="#">Карта</Link>
+									<Link href="#inedible">
+										<a>Несъедобные грибы</a>
+									</Link>
 								</P>
 							</li>
 						</ul>
