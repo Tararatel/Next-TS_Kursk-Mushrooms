@@ -5,8 +5,7 @@ import { NextRouter, useRouter } from 'next/router';
 
 export const EdiblePaths = (): JSX.Element => {
 	const router: NextRouter = useRouter();
-	const { id }: string | string[] | undefined = router.query;
-	console.log(id);
+	const { id } = router.query;
 
 	return (
 		<>

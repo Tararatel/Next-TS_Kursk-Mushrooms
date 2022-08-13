@@ -22,7 +22,7 @@ export const Header = ({ className, ...props }: HeaderProps, ref: ForwardedRef<H
 						<ul>
 							<li>
 								<P size="small">
-									<Link href="/">
+									<Link href={'/'}>
 										<a>Главная</a>
 									</Link>
 								</P>

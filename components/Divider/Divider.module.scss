@@ -4,3 +4,9 @@
 	background: #e6e6e6;
 	margin-bottom: 60px;
 }
+
+@media (max-width: 480px) {
+	.hr {
+		margin-bottom: 20px;
+	}
+}

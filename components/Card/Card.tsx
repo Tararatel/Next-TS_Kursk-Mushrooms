@@ -21,7 +21,7 @@ export const Card = ({ className, data, ...props }: CardProps): JSX.Element => {
 							</P>
 							<P className={styles.card__title} size="big">{`${card.title}`}</P>
 							<P className={styles.card__text} size="small">{`${card.text}`}</P>
-							<Link href={`/mushrooms/edible/${card.pathName}`}>
+							<Link href={`/mushrooms/edible/${card.id}`} as={`/mushrooms/edible/${card.pathName}`}>
 								<a>
 									<P className={styles.card__link} size="verySmall" align="left">
 										Подробнее
