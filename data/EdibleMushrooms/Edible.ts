@@ -15,13 +15,14 @@ import GruzdImg from './gruzd.jpg';
 import VolnushkaImg from './volnushka.jpg';
 import MohovikImg from './mohovik.jpg';
 
-interface Data {
+export interface Data {
 	id: number;
 	pathName: string;
 	img: StaticImageData;
 	title: string;
 	text: string;
 	latin: string;
+	coordinates?: number[][];
 }
 
 export const Edible: Data[] = [
@@ -32,6 +33,10 @@ export const Edible: Data[] = [
 		title: 'Белый гриб',
 		text: 'Белый гриб считается царём грибов не только из-за его внушительного размера, но и благодаря его вкусу и питательности.',
 		latin: 'Bolétus edúlis',
+		coordinates: [
+			[51.694208, 35.998628],
+			[51.692322, 36.001505],
+		],
 	},
 	{
 		id: 2,
@@ -40,6 +45,10 @@ export const Edible: Data[] = [
 		title: 'Подберёзовик',
 		text: 'Подберезовики – очень распространенный вид съедобных грибов, принадлежащий к семейству болетовых',
 		latin: 'Leccinum',
+		coordinates: [
+			[51.694024, 36.00066],
+			[51.693075, 35.864002],
+		],
 	},
 	{
 		id: 3,

@@ -1,7 +1,8 @@
 import { MapProps } from './Map.props';
 import styles from './Map.module.scss';
-import cn from 'classnames';
-import { YMaps, Map, Placemark } from 'react-yandex-maps';
+import { YMaps, Map, Placemark, ListBox, ListBoxItem } from 'react-yandex-maps';
+import { useState, useEffect } from 'react';
+import { Data, Edible } from '../../data/EdibleMushrooms/Edible';
 
 export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 	interface MapData {
@@ -14,17 +15,45 @@ export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 		zoom: 14,
 	};
 
-	const coordinates: number[][] = [
-		[51.694208, 35.998628],
-		[51.692322, 36.001505],
-	];
+	const [mushrooms, setMushrooms] = useState<Data[]>(
+		Edible.map((item) => {
+			return item;
+		})
+	);
+
+	const [coordinates, setCoordinates] = useState<number[][]>([]);
+
+	const coordinateHandler = (mushroom: Data): void => {
+		setCoordinates((prevState): any => {
+			if (prevState.length > 0) {
+				return [...prevState, ...(mushroom.coordinates as number[][])];
+			} else {
+				return mushroom.coordinates;
+			}
+		});
+	};
+
+	useEffect(() => {}, [coordinates]);
 
 	return (
 		<section className={styles.map}>
 			<YMaps>
 				<Map width={'100%'} height={'100%'} defaultState={mapData}>
-					{coordinates.map((coordinate) => (
-						<Placemark key={coordinate[0]} geometry={coordinate} />
+					<ListBox
+						data={{
+							content: 'Выберите грибы',
+						}}
+					>
+						{mushrooms.map((mushroom) => (
+							<ListBoxItem
+								key={mushroom.id}
+								data={{ content: mushroom.title }}
+								onClick={(): void => coordinateHandler(mushroom)}
+							/>
+						))}
+					</ListBox>
+					{coordinates.map((coordinate, idx) => (
+						<Placemark key={idx} geometry={coordinate} />
 					))}
 				</Map>
 			</YMaps>
