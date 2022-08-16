@@ -5,7 +5,7 @@ import { NextRouter, useRouter } from 'next/router';
 import styles from './Description.module.scss';
 import { DescriptionProps } from './Description.props';
 
-const EdiblePaths = ({ className, edibleData, ...props }: DescriptionProps): JSX.Element => {
+const EdiblePaths = ({ className, ...props }: DescriptionProps): JSX.Element => {
 	const router: NextRouter = useRouter();
 	const { id } = router.query;
 
