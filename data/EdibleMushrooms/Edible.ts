@@ -1,4 +1,3 @@
-import { StaticImageData } from 'next/image';
 import BelyImg from './bely.jpg';
 import PodberezovikImg from './podberezovik.jpg';
 import PodosinovikImg from './podosinovik.jpg';
@@ -14,18 +13,9 @@ import RizikImg from './rizik.jpg';
 import GruzdImg from './gruzd.jpg';
 import VolnushkaImg from './volnushka.jpg';
 import MohovikImg from './mohovik.jpg';
+import { MushroomType } from '../Mushrooms.types';
 
-export interface Data {
-	id: number;
-	pathName: string;
-	img: StaticImageData;
-	title: string;
-	text: string;
-	latin: string;
-	coordinates?: number[][];
-}
-
-export const Edible: Data[] = [
+export const Edible: MushroomType[] = [
 	{
 		id: 1,
 		pathName: 'porcini',

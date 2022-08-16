@@ -3,7 +3,7 @@ import styles from './Card.module.scss';
 import Image from 'next/image';
 import { P } from '../P/P';
 import { Edible } from '../../data/EdibleMushrooms/Edible';
-import { InEdible } from '../../data/InedibleMushrooms/Edible';
+import { InEdible } from '../../data/InedibleMushrooms/InEdible';
 import Link from 'next/link';
 
 export const Card = ({ className, data, ...props }: CardProps): JSX.Element => {
@@ -21,7 +21,7 @@ export const Card = ({ className, data, ...props }: CardProps): JSX.Element => {
 							</P>
 							<P className={styles.card__title} size="big">{`${card.title}`}</P>
 							<P className={styles.card__text} size="small">{`${card.text}`}</P>
-							<Link href={`/mushrooms/edible/${card.id}`} as={`/mushrooms/edible/${card.pathName}`}>
+							<Link href={`/mushrooms/${card.id}`} as={`/mushrooms/${card.pathName}`}>
 								<a>
 									<P className={styles.card__link} size="verySmall" align="left">
 										Подробнее
@@ -45,6 +45,13 @@ export const Card = ({ className, data, ...props }: CardProps): JSX.Element => {
 							</P>
 							<P className={styles.card__title} size="big">{`${card.title}`}</P>
 							<P className={styles.card__text} size="small">{`${card.text}`}</P>
+							<Link href={`/mushrooms/${card.id}`} as={`/mushrooms/${card.pathName}`}>
+								<a>
+									<P className={styles.card__link} size="verySmall" align="left">
+										Подробнее
+									</P>
+								</a>
+							</Link>
 						</div>
 					))}
 				</>
