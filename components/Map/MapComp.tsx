@@ -2,7 +2,8 @@ import { MapProps } from './Map.props';
 import styles from './Map.module.scss';
 import { YMaps, Map, Placemark, ListBox, ListBoxItem } from 'react-yandex-maps';
 import { useState, useEffect } from 'react';
-import { Data, Edible } from '../../data/EdibleMushrooms/Edible';
+import { Edible } from '../../data/EdibleMushrooms/Edible';
+import { MushroomType } from '../../data/Mushrooms.types';
 
 export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 	interface MapData {
@@ -15,7 +16,7 @@ export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 		zoom: 14,
 	};
 
-	const [mushrooms, setMushrooms] = useState<Data[]>(
+	const [mushrooms, setMushrooms] = useState<MushroomType[]>(
 		Edible.map((item) => {
 			return item;
 		})
@@ -23,7 +24,7 @@ export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 
 	const [coordinates, setCoordinates] = useState<number[][]>([]);
 
-	const coordinateHandler = (mushroom: Data): void => {
+	const coordinateHandler = (mushroom: MushroomType): void => {
 		setCoordinates((prevState): any => {
 			if (prevState.length > 0) {
 				return [...prevState, ...(mushroom.coordinates as number[][])];
