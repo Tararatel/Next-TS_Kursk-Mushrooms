@@ -1,6 +1,4 @@
 import { StaticImageData } from 'next/image';
-import { Url } from 'url';
-
 export interface MushroomType {
 	id: number;
 	pathName: string;
