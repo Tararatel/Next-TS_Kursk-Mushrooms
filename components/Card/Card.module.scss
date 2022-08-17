@@ -42,9 +42,31 @@
 	}
 }
 
+@media (max-width: 755px) {
+	.card {
+		width: 380px;
+	}
+}
+
+@media (max-width: 410px) {
+	.card {
+		width: 360px;
+	}
+}
+
 @media (max-width: 390px) {
 	.card {
-		width: 283px;
+		width: 320px;
+
+		.card__img {
+			min-height: 177px;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.card {
+		width: 280px;
 
 		.card__img {
 			min-height: 177px;
