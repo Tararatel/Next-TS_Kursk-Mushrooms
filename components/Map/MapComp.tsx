@@ -27,7 +27,7 @@ export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 	const coordinateHandler = (mushroom: MushroomType): void => {
 		setCoordinates((prevState): any => {
 			if (prevState.length > 0) {
-				return [...prevState, ...(mushroom.coordinates as number[][])];
+				return [] /* [...prevState, ...(mushroom.coordinates as number[][])] */;
 			} else {
 				return mushroom.coordinates;
 			}
@@ -53,6 +53,7 @@ export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 							/>
 						))}
 					</ListBox>
+					{}
 					{coordinates.map((coordinate, idx) => (
 						<Placemark key={idx} geometry={coordinate} />
 					))}
