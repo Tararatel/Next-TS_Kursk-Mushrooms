@@ -7,6 +7,9 @@ const Home: NextPage = () => {
 			<Header />
 			<Banner />
 			<List />
+			<P size="large" align="center">
+				Грибы на карте
+			</P>
 			<MapComp />
 		</>
 	);
