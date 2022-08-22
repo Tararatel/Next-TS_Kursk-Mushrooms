@@ -1,0 +1,34 @@
+.footer {
+	width: 100%;
+	height: 190px;
+	background-color: #000;
+
+	.footer__wrapper {
+		max-width: 1200px;
+		height: 130px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 50px;
+
+		.footer__wrapper__title {
+			padding: 5px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.footer__wrapper__text {
+			padding: 5px;
+			margin-bottom: 15px;
+		}
+
+		.footer__wrapper__social {
+			display: grid;
+			width: 250px;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin-bottom: 20px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

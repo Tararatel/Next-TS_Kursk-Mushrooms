@@ -12,8 +12,8 @@ export const MapComp = ({ className, ...props }: MapProps): JSX.Element => {
 	}
 
 	const mapData: MapData = {
-		center: [51.693294, 36.008414],
-		zoom: 14,
+		center: [51.729082, 36.190244],
+		zoom: 11,
 	};
 
 	const [mushrooms, setMushrooms] = useState<MushroomType[]>(

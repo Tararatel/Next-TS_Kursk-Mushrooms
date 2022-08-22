@@ -6,3 +6,5 @@ export * from './Banner/Banner';
 export * from './Map/MapComp';
 export * from './Card/Card';
 export * from './List/List';
+export * from './Footer/Footer';
+export * from './Up/Up';

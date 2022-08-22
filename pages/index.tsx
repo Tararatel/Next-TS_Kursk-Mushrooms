@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Banner, Header, List, MapComp, P } from '../components';
+import { Banner, Footer, Header, List, MapComp, P, Up } from '../components';
 
 const Home: NextPage = () => {
 	return (
@@ -11,6 +11,8 @@ const Home: NextPage = () => {
 				Грибы на карте
 			</P>
 			<MapComp />
+			<Footer />
+			<Up />
 		</>
 	);
 };
