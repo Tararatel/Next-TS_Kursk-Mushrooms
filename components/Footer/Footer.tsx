@@ -34,7 +34,7 @@ export const Footer = ({ className, ...props }: FooterProps, ref: ForwardedRef<H
 						<Image src={ImgTelegram} width={40} height={40} objectFit="contain" alt="Telegram" />
 					</a>
 				</div>
-				<P className={styles.footer__wrapper__title} size="verySmall" align="right">
+				<P className={styles.footer__wrapper__title} size="verySmall" align="center">
 					© {currentDate} Project by Aleksey Sidorov
 				</P>
 			</div>
