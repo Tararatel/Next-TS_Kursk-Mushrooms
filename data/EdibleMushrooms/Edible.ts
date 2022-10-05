@@ -125,6 +125,8 @@ export const Edible: MushroomType[] = [
 			[51.687425, 35.883242],
 			[51.676867, 35.864058],
 			[51.713436, 36.043491],
+			[51.696732, 35.998244],
+			[51.675895, 35.879002],
 		],
 	},
 	{
@@ -209,7 +211,10 @@ export const Edible: MushroomType[] = [
 			'Пластинки сначала белые, затем красноватые и наконец тёмно-коричневые, вздутые к середине, суженые к концам.',
 		source:
 			'https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D0%BC%D0%BF%D0%B8%D0%BD%D1%8C%D0%BE%D0%BD_%D0%BB%D0%B5%D1%81%D0%BD%D0%BE%D0%B9',
-		coordinates: [],
+		coordinates: [
+			[51.692654, 36.000283],
+			[51.691481, 35.999919],
+		],
 	},
 	{
 		id: 11,
@@ -275,7 +280,7 @@ export const Edible: MushroomType[] = [
 		tubular: 'Пластинки довольно частые, широкие, слабо нисходящие по ножке, белые с желтоватым оттенком.',
 		source:
 			'https://ru.wikipedia.org/wiki/%D0%93%D1%80%D1%83%D0%B7%D0%B4%D1%8C_%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B8%D0%B9',
-		coordinates: [],
+		coordinates: [[51.694111, 35.998533]],
 	},
 	{
 		id: 15,
@@ -292,6 +297,6 @@ export const Edible: MushroomType[] = [
 			'Гименофор (трубчатый слой шляпки) жёлтый, у зрелых грибов приобретают тусклый тёмно-жёлтый или оливковый оттенок. При надавливании медленно синеет.',
 		source:
 			'https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%85%D0%BE%D0%B2%D0%B8%D0%BA_%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9',
-		coordinates: [],
+		coordinates: [[51.677724, 35.879108]],
 	},
 ];

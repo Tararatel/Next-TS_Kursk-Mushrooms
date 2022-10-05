@@ -1,6 +1,6 @@
+import { YMaps, Map, Placemark, ListBox, ListBoxItem } from 'react-yandex-maps';
 import { MapProps } from './Map.props';
 import styles from './Map.module.scss';
-import { YMaps, Map, Placemark, ListBox, ListBoxItem } from 'react-yandex-maps';
 import { useState, useEffect } from 'react';
 import { Edible } from '../../data/EdibleMushrooms/Edible';
 import { MushroomType } from '../../data/Mushrooms.types';
